@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
     <title>Home Work</title>
 </head>
 
 <body>
     <!-- навигационное меню -->
-    <header class="headline container">
+    <header class="headline">
         <a class=" web-studio" href="#"><span class="color-blue">Web</span>Studio</a>
         <nav class="nav-bar">
             <ul>
-                <li><a href="./index.html" class="color-blue">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="/index.html" class="nav-studia">Студия</a></li>
+                <li><a href="/portfolio.html" class="nav-portfolio color-blue">Портфолио</a></li>
+                <li><a href="#" class="nav-contact">Контакты</a></li>
             </ul>
         </nav>
         <ul class="mail-tel">
@@ -32,56 +31,58 @@
     <main>        
         <section class="menu-button">
             <h2 class="h2-main">h2</h2>
-            <input type="radio"><label>Все</label>
-            <input type="radio"><label>Веб-сайты</label>
-            <input type="radio"><label>Приложения</label>
-            <input type="radio"><label>Дизайн</label>
-            <input type="radio"><label>Маркетинг</label>                       
+           <ul>
+                <li><input type="button" value="Все"></li>
+                <li><input type="button" value="Веб-сайты"></li>
+                <li><input type="button" value="Приложения"></li>
+                <li><input type="button" value="Дизайн"></li>
+                <li><input type="button" value="Маркетинг"></li>
+           </ul>                      
         </section>
         <section>
-            <ul class="main container">
+            <ul class="main">
                 <li>                    
-                    <img src="./images/img21.jpg" alt="Дизайнер" width="330">
+                    <img src="/images/img21.jpg" alt="Дизайнер" width="330">
                     <h3>Технокряк</h3>
                     <p>Веб-сайт</p>
                 </li>
                 <li>
-                    <img src="./images/img22.jpg" alt="Разработчик" width="330">
+                    <img src="/images/img22.jpg" alt="Разработчик" width="330">
                     <h3>Постер New Orlean vs Golden Star</h3>
                     <p>Дизайн</p>
                 </li>
                 <li>
-                    <img src="./images/img23.jpg" alt="Маркетолог" width="330">
+                    <img src="/images/img23.jpg" alt="Маркетолог" width="330">
                     <h3>Ресторан Seafood</h3>
                     <p>Приложения</p>
                 </li>
                 <li>
-                    <img src="./images/img24.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img24.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Проект Prime</h3>
                     <p>Маркетинг</p>
                 </li>
                 <li>
-                    <img src="./images/img25.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img25.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Проект Boxes</h3>
                     <p>Приложения</p>
                 </li>
                 <li>
-                    <img src="./images/img26.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img26.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Inspiration has no Borders</h3>
                     <p>Веб-сайт</p>
                 </li>
                 <li>
-                    <img src="./images/img27.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img27.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Издание Limited Edition</h3>
                     <p>Дизайн</p>
                 </li>
                 <li>
-                    <img src="./images/img28.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img28.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Проект LAB</h3>
                     <p>Маркетинг</p>
                 </li>
                 <li>
-                    <img src="./images/img29.jpg" alt="Дизайнер интерфейса" width="330">
+                    <img src="/images/img29.jpg" alt="Дизайнер интерфейса" width="330">
                     <h3>Growing Business</h3>
                     <p>Приложение</p>
                 </li>
@@ -89,7 +90,7 @@
         </section>
     </main>
     <!-- подвал -->
-    <footer class="footer container">
+    <footer class="footer">
         <a class=" web-studio" href="#"><span class="color-blue">Web</span>Studio</a>
         <address>
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
