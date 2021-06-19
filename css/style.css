@@ -1,137 +1,104 @@
-*,
-li,
-a {
-  text-decoration: none;
-  list-style-type: none;
-  color: black;
-  box-sizing: border-box;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+/* глобальный стиль */
 body {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   max-width: 1600px;
+  color: #212121;
 }
-.ff-Raleway {
+:root {
+  --color-primary: #2196f3;
 }
+/* хедер */
 .headline {
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid #ececec;
 }
-.headline > a:first-child {
-  color: black;
+.headline li {
+  list-style: none;
 }
-.container {
-  padding-left: 215px;
-  padding-right: 215px;
+.headline a {
+  text-decoration: none;
 }
-.nav-bar > ul > li {
-  display: inline;
-  padding-left: 50px;
-}
+
 .web-studio {
   width: 145px;
   height: 31px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 31px;
+  color: #212121;
+  text-decoration: none;
+}
+.nav-portfolio,
+.nav-contact,
+.nav-studia {
+  color: #212121;
 }
 .color-blue {
   color: #2196f3;
 }
-.mail-tel > li {
-  display: inline;
-  padding-left: 50px;
+.mail-tel > li > a {
   color: #757575;
+}
+.mail-tel > li > a:hover,
+.mail-tel > li > a:focus {
+  color: #212121;
 }
 /* section button */
 .section-one {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background: #2f303a;
-  height: 600px;
 }
+.section-one > button a {
+  text-decoration: none;
+}
+
 .h1 {
-  width: 650px;
-  height: 120px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
   text-align: center;
 }
 .button {
-  width: 200px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 30px;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background-color: color: var(--color-primary);
 }
 .button a {
   color: #ffffff;
 }
 /* основная  часть */
-.section-two {
-  height: 100%;
-  padding-top: 94px;
-  padding-bottom: 94px;
+.detail li {
+  list-style: none;
 }
-.detail {
-  display: flex;
-  justify-content: space-between;
-}
-
 .detail h3 {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: Roboto;
 }
 .detail p {
-  width: 270px;
-  height: 75px;
   font-size: 15px;
-  line-height: 24px;
   color: #757575;
-  letter-spacing: 0.03em;
   font-family: Roboto;
 }
 /* чем мы занимаемся */
-.sectrion-three {
-  margin-top: 94px;
+.section-three {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
 }
-.doing {
-  display: flex;
-  justify-content: space-between;
+.doing li {
+  list-style: none;
 }
-.doing img {
-  padding-top: 50px;
-}
-
 /* наша команда */
 .section-four {
-  height: 100%;
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+.section-four li {
+  list-style: none;
 }
 .section-four h2 {
   font-family: Roboto;
@@ -140,27 +107,19 @@ body {
   line-height: 42px;
   text-align: center;
 }
-.team {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-}
-.section-four > ul > li {
-  background-color: #ffffff;
+.team-footer {
   text-align: center;
 }
-.section-four > ul > li > p {
+.team-footer > p {
   color: #757575;
 }
+
 /* подвал */
 .footer {
-  height: 100%;
   background: #2f303a;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 60px;
-  padding-bottom: 60px;
+}
+.footer li {
+  list-style: none;
 }
 .footer > a,
 p {
@@ -171,67 +130,36 @@ p {
   font-size: 14px;
 }
 .footer-info {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer ul {
-  padding: 0;
-}
-.footer ul > li:first-child {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-/* page potfolio */
-.menu-button {
-  display: flex;
-  justify-content: center;
-  margin-right: 8px;
-}
-.menu-button > input {
-  display: none;
-}
-.menu-button label {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-right: 8px;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  border: none;
-  cursor: pointer;
-  line-height: 35px;
-  padding: 0px 15px;
-}
-.menu-button > label:hover {
-  background-color: #2196f3;
-  cursor: pointer;
+.footer-info:hover,
+.footer-info:focus {
   color: #ffffff;
 }
 
-.main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* page potfolio */
+.menu-button li {
+  list-style: none;
 }
-.main > li {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+.menu-button > ul > li:first-child > input {
+  background: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
 }
-.main > li:nth-child(-n + 6) {
-  margin-bottom: 30px;
+.menu-button > ul > li > input:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
 }
-.main > li:nth-child(n + 7) {
-  margin-bottom: 94px;
+.main li {
+  list-style: none;
 }
-
 .main > li > h3 {
-  padding-left: 24px;
   font-size: 18px;
 }
 .main > li > p {
   color: #757575;
-  padding-left: 24px;
 }
 .h2-main {
   position: absolute;
