@@ -60,11 +60,10 @@ body {
   text-align: center;
 }
 .button {
-  background-color: color: var(--color-primary);
-}
-.button a {
   color: #ffffff;
+  background-color: var(--color-primary);
 }
+
 /* основная  часть */
 .detail li {
   list-style: none;
