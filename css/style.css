@@ -1,6 +1,6 @@
 /* глобальный стиль */
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   max-width: 1600px;
@@ -23,26 +23,44 @@ body {
 .web-studio {
   width: 145px;
   height: 31px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 31px;
   color: #212121;
+  letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--color-primary);
+}
+.headline-name {
+  color: #212121;
+}
+.nav-studia-one {
+  color: var(--color-primary);
 }
 .nav-portfolio,
-.nav-contact,
-.nav-studia {
+.nav-contact {
   color: #212121;
 }
-.color-blue {
-  color: #2196f3;
+.nav-bar a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
+
 .mail-tel > li > a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: #757575;
 }
+.nav-bar > ul > li > a:hover,
+.nav-bar > ul > li > a:focus,
 .mail-tel > li > a:hover,
 .mail-tel > li > a:focus {
-  color: #212121;
+  color: var(--color-primary);
 }
 /* section button */
 .section-one {
@@ -54,12 +72,21 @@ body {
 }
 
 .h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  font-weight: 900;
-  text-align: center;
 }
 .button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--color-primary);
 }
@@ -72,22 +99,24 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  font-family: Roboto;
+  color: #212121;
 }
 .detail p {
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: #757575;
-  font-family: Roboto;
 }
 /* чем мы занимаемся */
-.section-three {
-  font-family: Roboto;
-  font-style: normal;
+.doing-name {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 .doing li {
   list-style: none;
@@ -96,20 +125,34 @@ body {
 .section-four {
   background: #f5f4fa;
 }
-.section-four li {
+.section-three li {
   list-style: none;
 }
-.section-four h2 {
-  font-family: Roboto;
+.section-three h2 {
   font-weight: bold;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 .team-footer {
   text-align: center;
 }
+.team-footer > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
 .team-footer > p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -120,16 +163,23 @@ body {
 .footer li {
   list-style: none;
 }
-.footer > a,
-p {
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
-.address {
+.footer-name {
+  color: #ffffff;
+}
+
+.footer-info {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-}
-.footer-info {
-  text-decoration: none;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-info:hover,
@@ -141,12 +191,29 @@ p {
 .menu-button li {
   list-style: none;
 }
-.menu-button > ul > li:first-child > input {
+.nav-studia-two {
+  color: #212121;
+}
+.nav-portfolio-two {
+  color: var(--color-primary);
+}
+/* секция с кнопками */
+.main-button li {
+  list-style: none;
+}
+.main-button > ul > li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.main-button > ul > li:first-child > button {
   background: var(--color-primary);
   color: #ffffff;
   cursor: pointer;
 }
-.menu-button > ul > li > input:hover {
+.main-button > ul > li > button:hover {
   background: var(--color-primary);
   color: #ffffff;
   cursor: pointer;
@@ -154,10 +221,20 @@ p {
 .main li {
   list-style: none;
 }
-.main > li > h3 {
-  font-size: 18px;
+.main a {
+  text-decoration: none;
 }
-.main > li > p {
+.main > li > a > h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.main > li > a > p {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 .h2-main {
