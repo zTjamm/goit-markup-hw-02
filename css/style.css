@@ -175,6 +175,7 @@ body {
 }
 
 .footer-info {
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
